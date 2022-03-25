@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nethereum.Hex" Version="4.2.0" />
+    <PackageReference Include="Nethereum.JsonRpc.RpcClient" Version="4.2.0" />
+    <PackageReference Include="Nethereum.RPC" Version="4.2.0" />
+    <PackageReference Include="Nethereum.Util" Version="4.2.0" />
+    <PackageReference Include="Nethereum.Web3" Version="4.2.0" />
+  </ItemGroup>
+
+</Project>
