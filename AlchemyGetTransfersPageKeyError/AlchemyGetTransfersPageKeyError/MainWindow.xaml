@@ -14,6 +14,8 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition />
         </Grid.RowDefinitions>
 
@@ -23,9 +25,12 @@
         <TextBox x:Name="RpcBox" Width="200" HorizontalAlignment="Left" Margin="0,5" Grid.Row="2" />
         <Button HorizontalAlignment="Left" Click="InitClick" Grid.Row="3">Initialize</Button>
 
-        <Button HorizontalAlignment="Left" Click="RunClick" Grid.Row="4" Margin="0,5,0,0">Run</Button>
+        <TextBlock Text="Enter Delay (ms):" Grid.Row="4" />
+        <TextBox x:Name="DelayBox" Width="200" HorizontalAlignment="Left" Text="100" Margin="0,5" Grid.Row="5" />
 
-        <ScrollViewer Grid.Row="5">
+        <Button HorizontalAlignment="Left" Click="RunClick" Grid.Row="6" Margin="0,5,0,0">Run</Button>
+
+        <ScrollViewer Grid.Row="7">
 
             <ItemsControl ItemsSource="{Binding ElementName=Window, Path=Messages}" Grid.Row="5">
                 <ItemsControl.ItemTemplate>

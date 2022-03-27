@@ -69,6 +69,12 @@ namespace AlchemyGetTransfersPageKeyError
                     {
                         break;
                     }
+
+                    if(int.TryParse(DelayBox.Text, out int delay))
+                    {
+                        Messages.Add($"Delaying for: {delay}ms.");
+                        await Task.Delay(delay);
+                    }
                 }
                 catch(RpcResponseException ex)
                 {
